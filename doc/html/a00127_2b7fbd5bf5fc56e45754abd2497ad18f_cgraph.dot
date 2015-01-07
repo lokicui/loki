@@ -1,0 +1,14 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="Loki::SmallObjAllocator::IsCorrupt",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="Loki::SmallObjAllocator::GetAlignment",height=0.2,width=0.4,color="black",URL="$a00127.html#b1c8a2a3d7e9368ab59422ddd082105c",tooltip="Returns # of bytes between allocation boundaries."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="Loki::SmallObjAllocator::GetMaxObjectSize",height=0.2,width=0.4,color="black",URL="$a00127.html#e49e9de3fd7b2fd93676cc1d63299b0d",tooltip="Returns max # of bytes which this can allocate."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="Loki::GetOffset",height=0.2,width=0.4,color="black",URL="$a00217.html#g2f0821e243f812a3ae2abfaea51895e8"];
+}

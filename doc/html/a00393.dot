@@ -1,0 +1,11 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="Loki::SmallObjAllocator",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="pool_",fontname="FreeSans"];
+  Node2 [label="Loki::FixedAllocator",height=0.2,width=0.4,color="black",URL="$a00056.html"];
+  Node3 -> Node2 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="allocChunk_\nemptyChunk_\ndeallocChunk_",fontname="FreeSans"];
+  Node3 [label="Loki::Chunk",height=0.2,width=0.4,color="black",URL="$a00025.html"];
+}

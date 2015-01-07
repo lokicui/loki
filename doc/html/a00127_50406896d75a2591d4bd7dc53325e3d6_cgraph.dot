@@ -1,0 +1,31 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="Loki::SmallObjAllocator::Deallocate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="Loki::FixedAllocator::Deallocate",height=0.2,width=0.4,color="black",URL="$a00056.html#49ab7ca3364fe05f2d7d91248ee5d0e3"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="Loki::FixedAllocator::CountEmptyChunks",height=0.2,width=0.4,color="black",URL="$a00056.html#e74cbab50e78bfa115d7c0fcdce00641"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="Loki::Chunk::HasAvailable",height=0.2,width=0.4,color="black",URL="$a00025.html#0874a711145788bd8c5265a9de2a4aac"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="Loki::Chunk::HasBlock",height=0.2,width=0.4,color="black",URL="$a00025.html#b4ce346a74a437dabe4748bfb8e8b950",tooltip="Returns true if block at address P is inside this Chunk."];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="Loki::Chunk::IsBlockAvailable",height=0.2,width=0.4,color="black",URL="$a00025.html#8fe6ac2943df6c2f60123f928f119a73"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="Loki::Chunk::IsCorrupt",height=0.2,width=0.4,color="black",URL="$a00025.html#245b6450d855d8ab65e9ca7add3e2071"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node8 [label="Loki::DefaultDeallocator",height=0.2,width=0.4,color="black",URL="$a00217.html#g1d24bf776342ace8f2004e3a173f6cb3"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node9 [label="Loki::SmallObjAllocator::GetAlignment",height=0.2,width=0.4,color="black",URL="$a00127.html#b1c8a2a3d7e9368ab59422ddd082105c",tooltip="Returns # of bytes between allocation boundaries."];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node10 [label="Loki::SmallObjAllocator::GetMaxObjectSize",height=0.2,width=0.4,color="black",URL="$a00127.html#e49e9de3fd7b2fd93676cc1d63299b0d",tooltip="Returns max # of bytes which this can allocate."];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node11 [label="Loki::GetOffset",height=0.2,width=0.4,color="black",URL="$a00217.html#g2f0821e243f812a3ae2abfaea51895e8"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node12 [label="Loki::FixedAllocator::HasBlock",height=0.2,width=0.4,color="black",URL="$a00056.html#f84b504579cea189ce1c415ee8ed5d2c"];
+  Node12 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+}

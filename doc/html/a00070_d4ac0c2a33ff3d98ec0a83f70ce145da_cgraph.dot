@@ -1,0 +1,23 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="Loki::LevelMutex::Lock",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="Loki::LevelMutexInfo::GetLevel",height=0.2,width=0.4,color="black",URL="$a00071.html#1cad7c6b6fc50e230401e4cc22761d14",tooltip="Returns the level of this mutex."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="Loki::LevelMutexInfo::IsLockedByCurrentThread",height=0.2,width=0.4,color="black",URL="$a00071.html#c0a343bcb322ea36495f536504f61f9f",tooltip="Returns true if this was locked by current thread."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="Loki::LevelMutexInfo::IsLocked",height=0.2,width=0.4,color="black",URL="$a00071.html#e6aa7465e1bba7f0c9fbf0b06f122a39",tooltip="Returns true if this mutex was locked at least once."];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="Loki::LevelMutexInfo::IsValid",height=0.2,width=0.4,color="black",URL="$a00071.html#36c34ecf5d019f3db9bfb8654cf49176"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="Loki::LevelMutexInfo::IsValidList",height=0.2,width=0.4,color="black",URL="$a00071.html#01f6dfba5d2ea5606109b34e5a543cf0"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="Loki::LevelMutexInfo::PostLock",height=0.2,width=0.4,color="black",URL="$a00071.html#3fe2ecf1bcf2c49eae04c493f023099c"];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+}

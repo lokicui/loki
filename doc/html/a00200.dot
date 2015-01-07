@@ -1,0 +1,18 @@
+digraph structs
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node0 [label="Cached Factory",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node4 [label="Eviction policies",height=0.2,width=0.4,color="black",URL="$a00203.html",tooltip="Gathers informations about the stored objects and choose a candidate for eviction..."];
+  Node2 [label="Encapsulation policies",height=0.2,width=0.4,color="black",URL="$a00201.html",tooltip="Defines how the object is returned to the client."];
+  Node1 [label="Factories",height=0.2,width=0.4,color="black",URL="$a00198.html"];
+  Node5 [label="Statistic policies",height=0.2,width=0.4,color="black",URL="$a00204.html",tooltip="Gathers information about the cache."];
+  Node3 [label="Creation policies",height=0.2,width=0.4,color="black",URL="$a00202.html",tooltip="Defines a way to limit the creation operation."];
+  Node1->Node0 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+}

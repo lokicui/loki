@@ -1,0 +1,40 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="Loki::MultiMutexLocker::MultiMutexLocker",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="Loki::LevelMutexInfo::MultiLock",height=0.2,width=0.4,color="black",URL="$a00071.html#dde650eae1cad8b4723e68cdb9130283"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="Loki::LevelMutexInfo::MutexUndoer::Cancel",height=0.2,width=0.4,color="black",URL="$a00073.html#87e777d849336fe81907e55aaad1edaa"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="Loki::LevelMutexInfo::DoErrorCheck",height=0.2,width=0.4,color="black",URL="$a00071.html#14e0d51318b864645bbb3df4f7c9f7ab"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="Loki::DoMutexesMatchContainer",height=0.2,width=0.4,color="black",URL="$a00192.html#d633ca81ae0befaf235ae63886368037"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="Loki::CountMutexesAtCurrentLevel",height=0.2,width=0.4,color="black",URL="$a00192.html#8cb767d3e7aaf2fe44b8f3b90218b876"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="Loki::LevelMutexInfo::GetCurrentMutex",height=0.2,width=0.4,color="black",URL="$a00071.html#b7fd94847721b118979b72121472d3e2"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node8 [label="Loki::LevelMutexInfo::IsValidList",height=0.2,width=0.4,color="black",URL="$a00071.html#01f6dfba5d2ea5606109b34e5a543cf0"];
+  Node6 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node9 [label="Loki::LevelMutexInfo::GetLevel",height=0.2,width=0.4,color="black",URL="$a00071.html#1cad7c6b6fc50e230401e4cc22761d14",tooltip="Returns the level of this mutex."];
+  Node6 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node10 [label="Loki::LevelMutexInfo::GetPrevious",height=0.2,width=0.4,color="black",URL="$a00071.html#b774e94ff72724dd87ff236d99970bb5",tooltip="Returns pointer to mutex previously locked by the thread which locked this."];
+  Node5 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node11 [label="Loki::GetCurrentThreadsLevel",height=0.2,width=0.4,color="black",URL="$a00192.html#9548795d9cda6f227a1e1241ba577ca8"];
+  Node11 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node11 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node12 [label="Loki::LevelMutexInfo::IsRecentLock",height=0.2,width=0.4,color="black",URL="$a00071.html#b917108c3e7c83b8a515d28e91a3a3ca"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node13 [label="Loki::LevelMutexInfo::IsValid",height=0.2,width=0.4,color="black",URL="$a00071.html#36c34ecf5d019f3db9bfb8654cf49176"];
+  Node13 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node14 [label="Loki::LevelMutexInfo::MutexUndoer::SetPlace",height=0.2,width=0.4,color="black",URL="$a00073.html#65a5d0ff95ed8ab37280350f6a10259c"];
+}
